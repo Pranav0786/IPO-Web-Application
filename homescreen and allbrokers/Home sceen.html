@@ -720,51 +720,92 @@
     max-width: 100%;
     height: auto;
   }
-  
   @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-image {
-      width: 80%;
-      height: 250px;
-    }
-    .section {
-      flex-direction: column;
-      text-align: center;
-    }
-    .section .left, .section .right {
-      max-width: 100%;
-    }
-    .section .left h1 {
-      font-size: 2.5rem;
-    }
-    .emoji {
-      font-size: 4rem;
-    }
-    .container {
-      flex-direction: column;
-      padding: 40px 5%;
-      text-align: center;
-    }
-    .qr-download {
-      justify-content: center;
-    }
-    .qr-download img {
-      margin-right: 10px;
-    }
-    .mockup-section {
-      margin-top: 40px;
-    }
-  }
   
-  @media (max-width: 1000px) {
-    .testimonial-card {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-  }</style>
+    @media (max-width: 768px) {
+  .navbar {
+    flex-direction: row; 
+    padding: 10px; 
+    justify-content: space-between; 
+    align-items: center; 
+    overflow-x: auto; 
+  }
+
+  .navbar .center {
+    gap: 10px; 
+    font-size: 0.9rem; 
+  }
+
+  .navbar .right {
+    gap: 10px; 
+  }
+
+  
+  .navbar .left img {
+    height: 40px; 
+  }
+}
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .section .left, .section .right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .mockup-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .broker-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .broker-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .compare-btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+  
+  
+  
+  </style>
   <!-- Navbar -->
   <div class="navbar">
     <div class="left">
