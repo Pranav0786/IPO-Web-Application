@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Large Cap Mutual Funds</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 15px 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .left img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar .left span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar .center {
+      display: flex;
+      gap: 20px;
+      font-size: 1rem;
+    }
+
+    .navbar .right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .navbar .right button {
+      background-color: #5d62f7;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .text-section h1 {
+      color: #4caf50;
+      font-size: 2.5rem;
+    }
+
+    .text-section p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .image-placeholder {
+      height: 200px;
+      width: 250px;
+      background-color: #e6f0fa;
+      border: 1px solid #000;
+    }
+
+    .overview {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-top: 40px;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .fund-menu {
+      margin-right: 20px;
+      background-color: #ddd;
+      padding: 1rem;
+      width: 20%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .fund-menu h3 {
+      margin-top: 0;
+    }
+
+    .fund-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .fund-menu li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #bbb;
+      color: #222;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .fund-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .arrow {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .inner-container {
+      width: 75%;
+    }
+
+    .fund-card {
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .fund-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .fund-logo {
+      width: 60px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .fund-details h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .fund-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 8px;
+    }
+
+    .fund-stats div small {
+      display: block;
+      color: #555;
+      font-size: 0.8rem;
+    }
+
+    .fund-stats div p {
+      margin: 4px 0 0;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .cagr {
+      color: green;
+    }
+
+    .dropdown-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .fund-info {
+      margin-top: 20px;
+      border-top: 1px solid #aaa;
+      padding-top: 16px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .info-item img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="left">
+      <img src="logo.blue.jpg" alt="Bluestock" />
+      <span>BLUESTOCK</span>
+    </div>
+    <div class="center">
+      <div>IPO</div>
+      <div>COMMUNITY</div>
+      <div>PRODUCTS</div>
+      <div>BROKERS</div>
+      <div>LIVE NEWS <span style="color: white; background-color: blue; font-size: 0.75rem; padding: 2px 6px; border-radius: 5px;">NEW</span></div>
+    </div>
+    <div class="right">
+      <span>Sign in</span>
+      <button>Sign Up Now</button>
+      <span>☰</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Large Cap Mutual Funds</h1>
+      <p><b>Large Cap funds invest in stocks of the top 100 companies in terms of full market capitalization. They invest at least 80% of their assets in large cap companies. These funds are relatively less risky than other market cap funds.</b></p>
+    </div>
+    <div class="image-placeholder"></div>
+  </div>
+
+  <h1 class="overview">Overview of Large Cap Mutual Funds</h1>
+
+  <div class="main-container">
+    <div class="fund-menu">
+      <h3>Fund categories</h3>
+      <ul>
+        <li>Equity <span class="arrow">&#9662;</span></li>
+        <li>Debt <span class="arrow">&#9662;</span></li>
+        <li>Hybrid <span class="arrow">&#9662;</span></li>
+        <li>Commodity <span class="arrow">&#9662;</span></li>
+        <li>Other <span class="arrow">&#9662;</span></li>
+      </ul>
+    </div>
+
+    <div class="inner-container">
+      <!-- Fund Cards -->
+      <script>
+        const funds = [
+          { name: "Canara Robeco Bluechip Equity Fund", cagr: "18.48%", ratio: "0.5%", sip: "₹500" },
+          { name: "Baroda BNP Paribas Large Cap Fund", cagr: "18.19%", ratio: "0.92%", sip: "₹500" },
+          { name: "Nippon India Large Cap Fund", cagr: "18.33%", ratio: "0.82%", sip: "₹500" },
+          { name: "ICICI Pru Bluechip Fund", cagr: "18.28%", ratio: "0.93%", sip: "₹500" },
+          { name: "Edelweiss Large Cap Fund", cagr: "17.53%", ratio: "0.77%", sip: "₹500" },
+          { name: "Kotak Bluechip Fund", cagr: "17.59%", ratio: "0.65%", sip: "₹500" },
+          { name: "Invesco India Largecap Fund", cagr: "17.19%", ratio: "0.8%", sip: "₹500" },
+          { name: "JM Large Cap Fund", cagr: "16.89%", ratio: "1.75%", sip: "₹500" },
+          { name: "HDFC Top 100 Fund", cagr: "16.88%", ratio: "1.08%", sip: "₹500" },
+          { name: "SBI Bluechip Fund", cagr: "16.77%", ratio: "0.85%", sip: "₹500" }
+        ];
+
+        document.write(
+          funds.map(fund => `
+          <div class="fund-card">
+            <div class="fund-summary">
+              <img src="https://via.placeholder.com/60" alt="Logo" class="fund-logo" />
+              <div class="fund-details">
+                <h2>${fund.name}</h2>
+                <div class="fund-stats">
+                  <div><small>CAGR (5Y)</small><p class="cagr">${fund.cagr}</p></div>
+                  <div><small>Expense Ratio</small><p>${fund.ratio}</p></div>
+                  <div><small>Min. SIP</small><p>${fund.sip}</p></div>
+                </div>
+              </div>
+              <div class="dropdown-icon">&#9660;</div>
+            </div>
+            <div class="fund-info">
+              <div class="info-item">
+                <img src="https://via.placeholder.com/24" alt="Info" />
+                <div>
+                  <strong>Fund Overview:</strong>
+                  <p>This fund focuses on top 100 companies in India offering long-term capital growth with relatively low risk.</p>
+                </div>
+              </div>
+            </div>
+          </div>`).join("")
+        );
+      </script>
+    </div>
+  </div>
+</body>
+</html>
