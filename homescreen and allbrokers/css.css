@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    background-color: #d3d3d3;
+    padding: 20px;
+    align-items: center;
+}
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+.text-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text-section p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.image-placeholder {
+    height: 200px;
+    width:250px;
+    background-color: #e6f0fa;
+    border: 1px solid #000;
+}
+.overview{
+    text-align: center;
+}
+
+
+/* next */
+
+  .fund-menu {
+    margin-left: 2%;
+    margin-bottom: 90%;
+    margin-top: 50px;
+    margin-right: 2%;
+    background-color: #ddd;
+    padding: 1rem;
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    transform: scale(1.25);
+   
+  }
+  
+  .fund-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .fund-menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #bbb;
+    color: #222;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .fund-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .arrow {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* next */
+  
+
+  .fund-card {
+    background-color: #ddd;
+    padding: 16px;
+    border-radius: 12px;
+    width: 80%;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    
+  }
+  
+  .fund-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .fund-logo {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .fund-details h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .fund-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 8px;
+  }
+  
+  .fund-stats div small {
+    display: block;
+    color: #555;
+    font-size: 0.8rem;
+  }
+  
+  .fund-stats div p {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .cagr {
+    color: green;
+  }
+  
+  .dropdown-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .fund-info {
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+    padding-top: 16px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .info-item img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .info-item strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+
+.main-container{  
+    width:100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around ;
+    background-color: white;
+    padding: 20px;
+    align-items: start;
+}
+.inner-container{
+  width: 95%;
+}
+
+
