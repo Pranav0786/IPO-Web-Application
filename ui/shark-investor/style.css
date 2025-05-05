@@ -1,0 +1,239 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-actions button{
+    background-color: #007bff;
+    color: white;
+  }
+
+  #mobileMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hamburger {
+    display: none; /* Hide by default */
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    #mobileMenu {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    #mobileMenu.show {
+      display: flex;
+    }
+  
+    nav {
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+    }
+  
+    nav a {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .nav-actions {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 0;
+      border-top: 1px solid #eee;
+      color: gray;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  }
+
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: small;
+    color: gray;
+  }
+  
+  .nav-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  main {
+    background-color: #d4baff30; 
+    padding: 20px;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .info-block {
+    max-width: 60%;
+  }
+  
+  .search-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 250px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .bt{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .info-block, .search-group {
+      max-width: 100% !important;
+    }
+  
+    .search-group {
+      align-items: flex-start;
+    }
+  
+    .search-box input {
+      width: 100%;
+    }
+  }
+  
+  
+  .breadcrumbs {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: gray;
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .investor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .investor-grid {
+      grid-template-columns: 1fr; /* 1 on mobile */
+    }
+  }
+  
+  .card {
+    /* border: 1px solid #ddd; */
+      padding: 16px;
+      border-radius: 10px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 0px 15px rgb(0 0 0 / 9%);
+  }
+  
+  .card img {
+    max-width: 90%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Optimization */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-actions {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .search-box input {
+      width: 100%;
+    }
+  }
+  

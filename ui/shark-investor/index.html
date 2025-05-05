@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Investors - Bluestock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo"><img width="200" height="40" src="images/bluestock-logo.png"></div>
+            <div class="bt"><button class="hamburger" id="hamburgerBtn">☰</button></div>
+        </div>
+        <div id="mobileMenu">
+            <nav id="navbar">
+                <a href="#">IPO</a>
+                <a href="#">COMMUNITY</a>
+                <a href="#">PRODUCTS</a>
+                <a href="#">BROKERS</a>
+                <a href="#">LIVE NEWS</a>
+                <span style="color: white; background-color: blue; font-size: 0.70rem; padding: 2px 6px; border-radius: 5px;">NEW</span>
+            </nav>
+    
+            <div class="nav-actions">
+                <a href="#">Sign In</a>
+                <button class="btn btn-primary">Sign Up Now</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="top-bar">
+            <div class="info-block">
+              <div class="breadcrumbs">Home > Shark Investor</div>
+              <h2>Shark Investors</h2>
+              <div class="description">
+                Look into the portfolio of these Super Investors to find out their favourite stocks.
+              </div>
+            </div>
+          
+            <div class="search-group">
+              <label for="search">Search by name</label>
+              <div class="search-box">
+                <input type="text" id="search" placeholder="eg: Damani">
+              </div>
+            </div>
+          </div>
+          
+        <div class="investor-grid" id="investorGrid">
+            <!-- Cards are inserted via JavaScript -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
