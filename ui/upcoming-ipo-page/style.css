@@ -1,0 +1,368 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --card-bg: #f5f5f5;
+  --primary: #4682b4;
+  --accent: #ff4500;
+  --border-color: #4682b4;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --card-bg: #1e1e1e;
+  --primary: #87ceeb;
+  --accent: #ff6347;
+  --border-color: #87ceeb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--bg);
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 40px;
+}
+
+.nav {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.signin,
+.signup {
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.signup {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.theme-toggle,
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  display: inline-block; /* Ensure visibility */
+}
+
+.hamburger {
+  display: none; /* Will be shown on mobile via script */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100%;
+  background: var(--bg);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  padding: 1rem;
+  z-index: 999;
+  color: var(--text);
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu .close-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  float: right;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-menu ul a {
+  color: var(--text);
+}
+
+.container {
+  padding: 2rem;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: var(--text);
+}
+
+.page-desc {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.ipo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.ipo-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.08);
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--border-color);
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVQYV2NkYGD4z8DAwMgAB//z8DAwMAAAgAEDAwMD/wYAAZ/1zV3oAAAAASUVORK5CYII='); /* Subtle texture */
+  color: var(--text);
+}
+
+.ipo-card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ipo-card .ipo-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.ipo-card h3 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ipo-card .details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.ipo-card .details-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.ipo-card .details-item {
+  width: 33.33%;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.ipo-card .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rhp {
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.drhp {
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-right .signin,
+  .nav-right .signup,
+  .nav-right .theme-toggle {
+    display: none;
+  }
+  .hamburger {
+    display: block !important; /* Ensure hamburger is visible on mobile */
+  }
+  .header {
+    padding: 1rem;
+  }
+  .ipo-grid {
+    grid-template-columns: 1fr;
+  }
+  .ipo-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Grey background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 5px;
+}
+
+.faq-container h2 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.faq-container p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.faq-box {
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff; /* Blue color for the "+" */
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 15px 20px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+.faq-answer ul {
+  padding-left: 18px;
+}
+
+.faq-box.open .faq-answer {
+  display: block;
+}
+
+.faq-box.open .toggle-btn {
+  color: #007bff;
+}
+
+/* Footer box */
+.footer-box {
+  background-color: white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 3px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}

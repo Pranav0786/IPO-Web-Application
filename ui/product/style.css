@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-actions button {
+  background-color: #007bff;
+  color: white;
+}
+
+#mobileMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #mobileMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #mobileMenu.show {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    color: gray;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: small;
+  color: gray;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+main {
+  /* background-color: #d4baff30; */
+  padding: 0 20px 20px 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .bt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-actions {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d3d3d3;
+  padding: 60px 15px;
+  flex-wrap: nowrap;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #111;
+}
+
+.banner-image {
+  width: 250px;
+  height: 250px;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+}
+
+.ipo-card {
+  flex: 1 1 calc(33.333% - 24px);
+  max-width: 230px;
+  height: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  background: #fff;
+  transition: box-shadow 0.3s;
+}
+
+.ipo-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ipo-card::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.pink::before {
+  background-color: #fde2e4;
+}
+
+.purple::before {
+  background-color: #e0e0ff;
+}
+
+.green::before {
+  background-color: #e0ffe0;
+}
+
+.ipo-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ipo-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.highlight-box {
+  background-color: #e3e7ff;
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.highlight-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c2c7c;
+  margin-bottom: 8px;
+}
+
+.highlight-box p {
+  font-size: 14px;
+  color: #333;
+}
